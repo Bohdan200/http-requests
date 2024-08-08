@@ -17,7 +17,7 @@ public class HttpStatusImageDownloader {
     public void downloadStatusImage(int code) throws Exception {
         String imageUrl = checker.getStatusImage(code);
 
-        File directory = new File("./downloaded");
+        File directory = new File("./images/HttpURLConnection");
         if (!directory.exists()) {
             directory.mkdirs();
         }

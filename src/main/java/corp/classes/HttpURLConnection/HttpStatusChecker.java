@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class HttpStatusChecker {
     public String getStatusImage(int code) throws Exception {
-        String imageUrl = "https://http.cat/" + code + ".jpg";
+        String imageUrl = "https://http.dog/" + code + ".jpg";
         if (isImageAvailable(imageUrl)) {
             return imageUrl;
         } else {
